@@ -132,6 +132,18 @@ class XiaomiKonaUdfpsHandler : public UdfpsHandler {
         int arg[2] = {TOUCH_UDFPS_ENABLE, UDFPS_STATUS_OFF};
         ioctl(touch_fd_.get(), TOUCH_IOC_SETMODE, &arg);
     }
+
+    void preEnroll() {
+        LOG(DEBUG) << __func__;
+    }
+
+    void enroll() {
+        LOG(DEBUG) << __func__;
+    }
+
+    void postEnroll() {
+        LOG(DEBUG) << __func__;
+    }
   private:
     fingerprint_device_t *mDevice;
     android::base::unique_fd touch_fd_;
