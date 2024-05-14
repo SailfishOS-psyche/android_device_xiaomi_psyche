@@ -2,21 +2,21 @@
   {
    "repository" : "lamjiidii1/android_kernel_xiaomi_sm8250",
    "target_path": "kernel/xiaomi/sm8250",
-   "branch"     : "lineage-20"
+   "branch"     : "lineage-21"
    "remote"     : "github"
    "clone-depth": "1",
  },
   {
    "repository" : "lamjiidii1/vendor_xiaomi_psyche",
    "target_path": "vendor/xiaomi/psyche",
-   "branch"     : "lineage-20"
+   "branch"     : "lineage-21"
    "remote"     : "gitlab"
    "clone-depth": "1",
  },
  {
    "repository" : "LineageOS/android_hardware_xiaomi",
    "target_path": "hardware/xiaomi",
-   "branch"     : "lineage-20"
+   "branch"     : "lineage-21"
    "remote"     : "github"
    "clone-depth": "1",
  }
