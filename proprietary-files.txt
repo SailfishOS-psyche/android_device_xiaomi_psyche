@@ -587,7 +587,6 @@ vendor/lib64/libtinyxml2_1.so
 # Display-calibration
 vendor/etc/ltm_config_xiaomi_42_02_0a_cmd_dsc_dsi_panel.xml
 vendor/etc/mdss_dsi_l3a_mp_42_02_0a_dsc_cmd_mi.xml
-vendor/etc/qdcm_calib_data_xiaomi_42_02_0a_cmd_dsc_dsi_panel.xml
 vendor/etc/tunings.txt
 
 # Display postprocessing
