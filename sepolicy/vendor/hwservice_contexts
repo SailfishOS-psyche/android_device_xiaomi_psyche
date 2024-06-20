@@ -1,21 +1,10 @@
 # Fingerprint
-com.fingerprints.extension::IFingerprintNavigation                                      u:object_r:hal_fingerprint_hwservice:s0
-com.fingerprints.extension::IFingerprintSensorTest                                      u:object_r:hal_fingerprint_hwservice:s0
-vendor.goodix.hardware.biometrics.fingerprint::IGoodixFingerprintDaemon                 u:object_r:hal_fingerprint_hwservice:s0
+com.fingerprints.extension::IFingerprintNavigation                                                  u:object_r:hal_fingerprint_hwservice:s0
+com.fingerprints.extension::IFingerprintSensorTest                                                  u:object_r:hal_fingerprint_hwservice:s0
+vendor.goodix.hardware.biometrics.fingerprint::IGoodixFingerprintDaemon                             u:object_r:hal_fingerprint_hwservice:s0
 
 # Mlipay
-vendor.xiaomi.hardware.mlipay::IMlipayService                       u:object_r:hal_mlipay_hwservice:s0
+vendor.xiaomi.hardware.mlipay::IMlipayService                                                       u:object_r:hal_mlipay_hwservice:s0
 
-<<<<<<< HEAD
-# NFC
-vendor.nxp.nxpnfc::INxpNfc                                          u:object_r:hal_nfc_hwservice:s0
-=======
 # Motor
-vendor.xiaomi.hardware.motor::IMotor                                u:object_r:hal_motor_hwservice:s0
-
-# NFC
-vendor.nxp.nxpese::INxpEse                                         u:object_r:hal_secure_element_hwservice:s0
-
-# Sensors
-vendor.xiaomi.hardware.citsensorservice::ICitSensorService                    u:object_r:vendor_hal_citsensorservice_xiaomi_hwservice:s0
->>>>>>> e2c58b7 (sm8250-common: Switch to NFC service AIDL)
+vendor.xiaomi.hardware.motor::IMotor                                                                u:object_r:hal_motor_hwservice:s0
