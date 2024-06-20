@@ -21,6 +21,9 @@ allow hal_fingerprint_default tee_device:chr_file rw_file_perms;
 # Allow the fingerprint HAL to use the UHID devices
 allow hal_fingerprint_default uhid_device:chr_file rw_file_perms;
 
+# Allow the fingerprint HAL to access the Xiaomi touchfeature devices
+allow hal_fingerprint_default vendor_touchfeature_device:chr_file rw_file_perms;
+
 # Allow the fingerprint HAL to access the fingerprint sysfs files
 allow hal_fingerprint_default vendor_sysfs_fingerprint:dir r_dir_perms;
 allow hal_fingerprint_default vendor_sysfs_fingerprint:file rw_file_perms;
