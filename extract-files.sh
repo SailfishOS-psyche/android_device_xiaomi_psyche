@@ -60,11 +60,13 @@ function blob_fixup() {
             ;;
         vendor/etc/libnfc-nci.conf)
             cat << EOF >> "${2}"
+
 ###############################################################################
 # Mifare Tag implementation
 # 0: General implementation
 # 1: Legacy implementation
-LEGACY_MIFARE_READER=0
+LEGACY_MIFARE_READER=1
+###############################################################################
 EOF
             ;;
         vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so)
