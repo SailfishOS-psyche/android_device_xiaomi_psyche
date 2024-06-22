@@ -59,7 +59,7 @@ function blob_fixup() {
             sed -i "/media_codecs_dolby_audio.xml/d" "${2}"
             ;;
         vendor/etc/libnfc-nci.conf)
-            cat << EOF >> "${2}"
+            grep -q "LEGACY_MIFARE_READER" "${2}" || cat << EOF >> "${2}"
 
 ###############################################################################
 # Mifare Tag implementation
@@ -73,7 +73,7 @@ EOF
             "${SIGSCAN}" -p "9A 0A 00 94" -P "1F 20 03 D5" -f "${2}"
             ;;
         vendor/lib64/camera/components/com.mi.node.watermark.so)
-            "${PATCHELF}" --add-needed "libpiex_shim.so" "${2}"
+            grep -q "libpiex_shim.so" "${2}" || "${PATCHELF}" --add-needed "libpiex_shim.so" "${2}"
             ;;
         vendor/etc/init/init.batterysecret.rc)
             sed -i "/seclabel/d" "${2}"
